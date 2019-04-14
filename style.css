@@ -3,6 +3,7 @@ body{margin:0;
      background:linear-gradient(#D8BFD8,#00FF7F,#00FA9A,#D8BFD8);
 	 background-size:400px 400px;
 	 font-family: 'PT Serif', serif;
+	 animation:change 5s infinite;
     }
 header{background-image:linear-gradient(-90deg,white,red,yellow,blue);
 	  padding:20px 0px;
@@ -18,15 +19,15 @@ header{background-image:linear-gradient(-90deg,white,red,yellow,blue);
         }
 		/*for side bars*/
 	  .sideBars{
-		  background-image:linear-gradient(white,white);
-		  flex:0.4;
-		  order:1;
-		  font-family: 'Fredoka One', cursive;
-		  overflow:hidden;
-		  position:relative;
-		  margin-right:12px;
-		   -webkit-transition: width 2s; /* Safari */
-  transition: width 2s;
+		 position: absolute;
+         left: -80px;
+         transition: 0.3s;
+          padding: 15px;
+          width: 100px;
+        text-decoration: none;
+           font-size: 20px;
+        color: white;
+        border-radius: 0 5px 5px 0;
 		  
 	  }
 	  .tabs{
@@ -34,6 +35,9 @@ header{background-image:linear-gradient(-90deg,white,red,yellow,blue);
 		  font-size:26px;
 		  flex:1;
 		  order:2;
+		  margin:0;
+		  animation-name:divs;
+		  animation-duration:2s;
 	  }
 	  
 	  /* The navigation menu links */
@@ -62,5 +66,50 @@ header{background-image:linear-gradient(-90deg,white,red,yellow,blue);
 		  position:relative;
 		  margin-left:12px; 
 }
-		  
+@media screen and (max-height: 450px) {
+  .sideBars {padding-top: 15px;}
+  .sideBars a {font-size: 18px;}
+}
+#sideBars a:hover {
+  left: 0;
+}
+
+#Home {
+  top: 20px;
+  background-color: #4CAF50;
+}
+
+#About {
+  top: 80px;
+  background-color: #2196F3;
+}
+
+#Tech {
+  top: 140px;
+  background-color: #f44336;
+}
+
+#Help {
+  top: 200px;
+  background-color: #555
+}
+
+sideBars:a.active.hover{background-color:silver;
+}
+@keyframes change{
+0%{background:linear-gradient(#00FA9A,#D8BFD8);
+}
+50%{background:linear-gradient(blue,#D8BFD8);
+}
+65%{background:linear-gradient(grey,white);
+}
+100%{background:linear-gradient(red,yellow);
+} 
+}
+@keyframes divs{
+0%{background:linear-gradient(-90deg,blue,cyan,aqua,yellow,orange,white,green);
+}
+100%{background:linear-gradient(-90deg,white,red,yellow,blue);
+}
+}
       
