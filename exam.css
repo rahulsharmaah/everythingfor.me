@@ -1,0 +1,16 @@
+.mains{background:linear-gradient(green,lime);
+	display:flex;
+	position:absolute;
+	flex-flow:row-wrap;
+	order:1;
+    flex:1;
+     }
+	 .neet{background:linear-gradient(green,lime);
+	display:flex;
+	position:relative;
+	flex-flow:row-wrap;
+	order:2;
+    flex:1;
+     }
+	
+	

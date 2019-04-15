@@ -1,115 +1,59 @@
-@import "https://fonts.googleapis.com/css?family=Alegreya|Fredoka+One|PT+Serif" rel="stylesheet";
-body{margin:0;
-     background:linear-gradient(#D8BFD8,#00FF7F,#00FA9A,#D8BFD8);
-	 background-size:400px 400px;
-	 font-family: 'PT Serif', serif;
-	 animation:change 5s infinite;
-    }
-header{background-image:linear-gradient(-90deg,white,red,yellow,blue);
-	  padding:20px 0px;
-	  font-size:28px;
-	  margin:0px;
-	  color:white;
-	  font-family: 'Alegreya', serif;
-	  text-shadow: 4px 4px 4px #aaa;
-	  
-	  }
+html,body{margin:0px;
+ background:snow;
+ animation-name:headerChange;
+	 animation-duration:20s;
+	 animation:headerChange 20s infinite;
+	 transition:ease-in-out;
+	 height:100%;}
+ 
+/* header styling here*/
+header{
+	background:linear-gradient(to right,white,navy,red,#FFDC00,navy,snow);
+	 size:50x;
+	 padding:5px 0px 4px 0px;
+	 font-size:60px;
+	 color:white;
+	 text-decoration:none;
+text-shadow:3px 1px 1px black;	 
+	 }
+	header>a{text-decoration:none;}
+@keyframes headerChange{
+	0%{background:linear-gradient(snow,yellow);}
+25%{background:linear-gradientred,yellow);}
+50%{background:linear-gradient(salmon,palegreen);}
+100%{background:linear-gradient(tomato,lemonchiffon);}}
 
-.section{display:flex;
-        }
-		/*for side bars*/
-	  .sideBars{
-		 position: absolute;
-         left: -80px;
-         transition: 0.3s;
-          padding: 15px;
-          width: 100px;
-        text-decoration: none;
-           font-size: 20px;
-        color: white;
-        border-radius: 0 5px 5px 0;
-		  
-	  }
-	  .tabs{
-		  background-image:linear-gradient(-90deg,blue,cyan,aqua,yellow,orange,white,green);
-		  font-size:26px;
-		  flex:1;
-		  order:2;
-		  margin:0;
-		  animation-name:divs;
-		  animation-duration:2s;
-	  }
-	  
-	  /* The navigation menu links */
-.sideBars a {
-  padding: 8px 8px 8px 32px;
-  text-decoration: none;
-  font-size: 26px;
-  color: #818181;
-  display: flex;
-  transition: 0.3s;
-  transition-timing-function: ease-in-out;
-}
+.navigation>a:link,a:visited{
+	color:navy;
+	padding:8px 10px;
+	color:white;
+	display:inline-block; ;
+	color:honeydew;
+	font-size:20px;
+    background:linear-gradient(crimson,darkgreen,);
+	text-decoration:none;
+     margin:0px;}
 
-/* When you mouse over the navigation links, change their color */
-.sideBars a:hover {
-  background:linear-gradient(green,white,red);
-  width:300px;
-}
+.navigation>a:hover,a:active{color:snow;
+                 padding:12px 14px;
+                 transition:fade-out;
+				 background:darkblue}
+	
+	.navigation{
+	display:flex;
+	background:linear-gradient(crimson,darkgreen);
+	position:static;
+	 position: -webkit-sticky;
+  position: sticky;
+  top: 0;}
+  .Comments{background:linear-gradient(red,green,crimson);
+  position:sticky;
+  column:12;
+  row:11;
+  size:40%;
+  }
+  
+	
 
-/* Notification bar */
-.Notify{background-image:linear-gradient(orange,white,green);
-		  flex:0.3;
-		  order:3;
-		  font-family: 'Fredoka One', cursive;
-		  overflow:hidden;
-		  position:relative;
-		  margin-left:12px; 
-}
-@media screen and (max-height: 450px) {
-  .sideBars {padding-top: 15px;}
-  .sideBars a {font-size: 18px;}
-}
-#sideBars a:hover {
-  left: 0;
-}
 
-#Home {
-  top: 20px;
-  background-color: #4CAF50;
-}
 
-#About {
-  top: 80px;
-  background-color: #2196F3;
-}
-
-#Tech {
-  top: 140px;
-  background-color: #f44336;
-}
-
-#Help {
-  top: 200px;
-  background-color: #555
-}
-
-sideBars:a.active.hover{background-color:silver;
-}
-@keyframes change{
-0%{background:linear-gradient(#00FA9A,#D8BFD8);
-}
-50%{background:linear-gradient(blue,#D8BFD8);
-}
-65%{background:linear-gradient(grey,white);
-}
-100%{background:linear-gradient(red,yellow);
-} 
-}
-@keyframes divs{
-0%{background:linear-gradient(-90deg,blue,cyan,aqua,yellow,orange,white,green);
-}
-100%{background:linear-gradient(-90deg,white,red,yellow,blue);
-}
-}
-      
