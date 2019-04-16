@@ -4,17 +4,19 @@ html,body{margin:0px;
 	 animation-duration:20s;
 	 animation:headerChange 20s infinite;
 	 transition:ease-in-out;
-	 height:100%;}
+	 height:100%;
+	 justify-content:center;}
  
 /* header styling here*/
 header{
-	background:linear-gradient(to right,white,navy,red,#FFDC00,navy,snow);
+	background:linear-gradient(to bottom,slategray,lavender,lightgreen);
 	 size:50x;
 	 padding:5px 0px 4px 0px;
 	 font-size:60px;
 	 color:white;
 	 text-decoration:none;
-text-shadow:3px 1px 1px black;	 
+text-shadow:3px 1px 1px black;
+font-family: 'EB Garamond', serif;	 
 	 }
 	header>a{text-decoration:none;}
 @keyframes headerChange{
@@ -27,22 +29,24 @@ text-shadow:3px 1px 1px black;
 	color:navy;
 	padding:8px 10px;
 	color:white;
-	display:inline-block; ;
+	display:inline-block;
 	color:honeydew;
 	font-size:20px;
     background:linear-gradient(black,crimson,black);
 	text-decoration:none;
-     margin:0px;}
+     margin:0px;
+	 border-style:outset ;
+	  border-radius: 8px;}
 
-.navigation>a:hover,a:active{color:snow;
+.navigation>a:hover,a:active{color:red;
+                  background:linear-gradient(slategray,lavender,lightgreen);
                  padding:12px 14px;
                  transition:fade-out;
-				 background:darkblue}
+				 transition:1s;}
 	
 	.navigation{
 	display:flex;
 	background:linear-gradient(black,crimson,black);
-	 position: -webkit-sticky;
   position: sticky;
   top: 0;}
   .Comments{background:linear-gradient(red,green,crimson);
