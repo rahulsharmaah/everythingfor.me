@@ -30,7 +30,7 @@ text-shadow:3px 1px 1px black;
 	display:inline-block; ;
 	color:honeydew;
 	font-size:20px;
-    background:linear-gradient(crimson,darkgreen,);
+    background:linear-gradient(black,crimson,black);
 	text-decoration:none;
      margin:0px;}
 
@@ -41,7 +41,7 @@ text-shadow:3px 1px 1px black;
 	
 	.navigation{
 	display:flex;
-	background:linear-gradient(crimson,darkgreen);
+	background:linear-gradient(black,crimson,black);
 	position:static;
 	 position: -webkit-sticky;
   position: sticky;
@@ -52,6 +52,8 @@ text-shadow:3px 1px 1px black;
   row:11;
   size:40%;
   }
+  
+ .section{position:sticky;}
   
 	
 
