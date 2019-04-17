@@ -4,41 +4,72 @@ font-family: 'Lora', serif;}
 /*flexbox*/
 .flexbox{display:flex;
 margin:15px 15px 15px 15px;
-box-shadow: 10px 5px 10px 25px green ;
+box-shadow: 10px 5px 10px 25px rgb(0,0,255,0.5) ;
 flex-direction:column;
 }
-.flexbox>mains{
-	display:flex;
-	position:absolute;
-	order:1;
-    flex:1;
-	padding:5px,5px,5px,5px;
-	height:50px;
-	width:50px;
-	
-     }
 	.mains{background:linear-gradient(snow,red);
 	 font-family: 'Merriweather', serif;
 	}
 	#iit{padding:5px 5px 5px 5px;
 	text-align:center;}
-	
-	 .flexbox>neet{display:inline-flex;
-	position:absolute;
-	order:1;
-    flex:1;
-	padding:5px,5px,5px,5px;
-	height:50px;
-	width:50px;
-	 }
 
-.neet{;
+.neet{
 background:linear-gradient(grey,lightgreen);
 }
 #med{padding:5px 5px 5px 5px;
 text-align:center;
-font-size:25px;}
-.links{color:snow;}
-                            
-	
-	
+font-size:25px;
+}
+.links{color:red;}
+
+/*table medical*/
+
+#Impbooks{width:100%;
+border-collapse:1 ;
+border:red;}
+#Impbooks th{background:linear-gradient(brown,#FFB6C1);
+border:0px ;
+padding:10px 12px 10px 0px;
+}
+#Impbooks td{
+padding:15px 12px 15px 8px;
+}
+#Impbooks th:hover{background:linear-gradient(red,#FFF5EE);
+}
+
+#Impbooks tr:nth-child(even){background:linear-gradient(to top,#0000FF,#FFF5EE);
+}
+#Impbooks tr:nth-child(even):hover{background:linear-gradient(#00FA9A,snow);
+color:navy;}
+#Impbooks tr:nth-child(odd):hover{background:linear-gradient(rgb(255,69,0), 	#FFE4B5);
+color:navy;}
+#Impbooks tr:nth-child(odd){background:linear-gradient(to top,#F4A460,#FFF5EE);
+}
+
+/*table jee*/
+#jeebooks{width:100%;
+border-collapse:1 ;
+border:red;
+color:darkgreen;
+font-family:EB+Garamond;
+font-size:18px;}
+#jeebooks th{background:linear-gradient(#3CB371,#6B8E23);
+border:0px ;
+padding:10px 12px 10px 0px;
+color:#191970;
+}
+#jeebooks td{
+padding:15px 12px 15px 8px;
+}
+#jeebooks th:hover{background:linear-gradient(#7FFF00,#FFF5EE);
+}
+
+#jeebooks tr:nth-child(even){background:linear-gradient(to top,salmon,#3CB371, 	#FFFACD);
+color:black;
+}
+#jeebooks tr:nth-child(even):hover{background:linear-gradient(#008B8B,lightcoral);
+color:navy;}
+#jeebooks tr:nth-child(odd):hover{background:linear-gradient(olive,slategray);
+color:navy;}
+#jeebooks tr:nth-child(odd){background:linear-gradient(gray,bisque);
+}

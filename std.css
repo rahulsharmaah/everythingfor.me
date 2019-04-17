@@ -1,0 +1,28 @@
+
+/*flexbox*/
+.eng ,.medBooks,.boards{display:flex;
+background:linear-gradient(rgb(64,224,208),rgb(176,196,222));
+margin:15px 15px 15px 15px;
+box-shadow: 10px 5px 10px 25px rgb(221,160,221,0.4) ;
+flex-direction:column;
+}
+	.medBooks{background:linear-gradient(green,rgba(255,215,0,0.8));
+	 font-family: 'Merriweather', serif;
+	 margin:25px 15px 15px 15px; 
+	}
+	#books,#medical{padding:5px 5px 5px 5px;
+	text-align:center;
+	padding:5px 5px 5px 5px;}
+	
+	.medBooks>h2{{background:linear-gradient(red,rgba(255,215,0,0.8));}
+	
+	/*boards*/
+	#boards{background:linear-gradient(salmon,firebrick);
+	 font-family: 'Merriweather', serif;
+	 margin:25px 15px 15px 15px;
+	 display:flex;
+	 flex-direction:column;
+	 box-shadow: 10px 5px 10px 25px rgba(221,160,221,0.4);
+	 flex:1;
+	 order:3;
+	}

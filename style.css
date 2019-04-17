@@ -3,7 +3,7 @@ html,body{margin:0px;
  animation-name:headerChange;
 	 animation-duration:20s;
 	 animation:headerChange 20s infinite;
-	 transition:ease-in-out;
+	transition: opacity 500ms ease-in-out;
 	 height:100%;
 	 justify-content:center;}
  
@@ -40,7 +40,7 @@ font-family: 'EB Garamond', serif;
 
 .navigation>a:hover,a:active{color:red;
                   background:linear-gradient(slategray,lavender,lightgreen);
-                 padding:12px 14px;
+                 padding:14px 12px ;
                  transition:fade-out;
 				 transition:1s;}
 	
@@ -48,6 +48,7 @@ font-family: 'EB Garamond', serif;
 	display:flex;
 	background:linear-gradient(black,crimson,black);
   position: sticky;
+  position:-webkit-sticky;
   top: 0;}
   .Comments{background:linear-gradient(red,green,crimson);
   position:sticky;
