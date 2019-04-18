@@ -20,30 +20,30 @@ background:linear-gradient(grey,lightgreen);
 text-align:center;
 font-size:25px;
 }
-.links{color:snow;}
+.links{color:red;}
 
 /*table medical*/
 
-#Impbooks{width:100%;
+ #Impbooks{width:100%;
 border-collapse:1 ;
 border:red;}
-#Impbooks th{background:linear-gradient(brown,#FFB6C1);
+ #Impbooks th{background:linear-gradient(brown,#FFB6C1);
 border:0px ;
 padding:10px 12px 10px 0px;
 }
-#Impbooks td{
+ #Impbooks td{
 padding:15px 12px 15px 8px;
 }
-#Impbooks th:hover{background:linear-gradient(red,#FFF5EE);
+ #Impbooks th:hover{background:linear-gradient(red,#FFF5EE);
 }
 
-#Impbooks tr:nth-child(even){background:linear-gradient(to top,#0000FF,#FFF5EE);
+ #Impbooks tr:nth-child(even){background:linear-gradient(to top,#0000FF,#FFF5EE);
 }
-#Impbooks tr:nth-child(even):hover{background:linear-gradient(#00FA9A,snow);
+ #Impbooks tr:nth-child(even):hover{background:linear-gradient(#00FA9A,snow);
 color:navy;}
-#Impbooks tr:nth-child(odd):hover{background:linear-gradient(rgb(255,69,0), 	#FFE4B5);
+ #Impbooks tr:nth-child(odd):hover{background:linear-gradient(rgb(255,69,0), 	#FFE4B5);
 color:navy;}
-#Impbooks tr:nth-child(odd){background:linear-gradient(to top,#F4A460,#FFF5EE);
+ #Impbooks tr:nth-child(odd){background:linear-gradient(to top,#F4A460,#FFF5EE);
 }
 
 /*table jee*/
@@ -73,3 +73,4 @@ color:navy;}
 color:navy;}
 #jeebooks tr:nth-child(odd){background:linear-gradient(gray,bisque);
 }
+#center th{text-align:center;}

@@ -3,28 +3,46 @@ html,body{margin:0px;
  animation-name:headerChange;
 	 animation-duration:20s;
 	 animation:headerChange 20s infinite;
-	transition: opacity 500ms ease-in-out;
-	 height:100%;
-	 justify-content:center;}
+	transition:opacity 500ms ease-in-out;
+	min-height:100%;
+	 justify-content:center;
+	 background-origin:header;}
  
 /* header styling here*/
 header{
 	background:linear-gradient(to bottom,slategray,lavender,lightgreen);
 	 size:50x;
+	 margin:0px;
 	 padding:5px 0px 4px 0px;
 	 font-size:60px;
 	 color:white;
 	 text-decoration:none;
 text-shadow:3px 1px 1px black;
-font-family: 'EB Garamond', serif;	 
+font-family: 'EB Garamond', serif;
+margin-right:0px;
+animation-name:headerChange;	 
 	 }
 	header>a{text-decoration:none;}
 @keyframes headerChange{
 	0%{background:linear-gradient(snow,yellow);}
-25%{background:linear-gradientred,yellow);}
-50%{background:linear-gradient(salmon,palegreen);}
-100%{background:linear-gradient(tomato,lemonchiffon);}}
+25%{background:linear-gradient(honeydew,yellow);}
+50%{background:linear-gradient(#FAF0E6,palegreen);}
+100%{background:linear-gradient(aliceblue,lemonchiffon);}}
 
+
+
+
+
+.navigation{
+	display:block;
+	background:linear-gradient(black,crimson,black);
+    position: sticky;
+    position:-webkit-sticky;
+    top:0;
+	border-radius: 8px;
+	border:3px;
+	overflow: visible;}
+  
 .navigation>a:link,a:visited{
 	color:navy;
 	padding:8px 10px;
@@ -34,22 +52,18 @@ font-family: 'EB Garamond', serif;
 	font-size:20px;
     background:linear-gradient(black,crimson,black);
 	text-decoration:none;
-     margin:0px;
-	 border-style:outset ;
-	  border-radius: 8px;}
-
+    margin:2px;
+	border: 8px;}
+	  
 .navigation>a:hover,a:active{color:red;
-                  background:linear-gradient(slategray,lavender,lightgreen);
+                 background:linear-gradient(navy,grey,yellow);
                  padding:14px 12px ;
                  transition:fade-out;
-				 transition:1s;}
-	
-	.navigation{
-	display:flex;
-	background:linear-gradient(black,crimson,black);
-  position: sticky;
-  position:-webkit-sticky;
-  top: 0;}
+				 transition:o.7s;
+				 border-radius:9px;
+				 border-color:black;}
+				 .active{background:linear-gradient(navy,red,lightgreen,yellow);}
+				 
   .Comments{background:linear-gradient(red,green,crimson);
   position:sticky;
   column:12;
@@ -58,6 +72,37 @@ font-family: 'EB Garamond', serif;
   }
   
  .section{position:sticky;}
+ .msg{background:linear-gradient(green,yellow);}
+ 
+ .msg,#start{
+   padding:14px 12px;
+   margin:10px 0px 10px 10px;
+ animation-name:msgBg;
+	 animation-duration:20s;
+	 animation:msgBg 20s infinite;
+	 font-family:font-family: 'Lora', serif;
+	 font-size:20px;
+	 overflow: visible;}
+	 
+	 #start{background:linear-gradient(yellow,red);
+	 text-align:left;
+	  text-indent: 50px;
+  text-align: justify;
+  letter-spacing: 1px;
+  overflow: visible;}
+	#start::first-line {
+  color: #008CBA;
+	font-size: xx-large;}
+ 
+ @keyframes msgBg{
+	 0%{background:linear-gradient(#E0FFFF,salmon,#F5F5DC,#FFF0F5);}
+ 100%{background:linear-gradient(tomato,#FFFFF0);}}
+ 
+ @media only screen and (max-width:650px){
+	 .navigation>a:link,a:visited{display:block;}
+	 header{font-size:32px;}
+	 
+ 
   
 	
 
