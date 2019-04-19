@@ -8,6 +8,8 @@
     enable_page_level_ads: true
   });
 </script>
+<link href="https://fonts.googleapis.com/css?family=Acme|Bree+Serif|Cinzel|Crimson+Text|EB+Garamond|Lora|Merriweather|Open+Sans+Condensed:300|Slabo+27px"
+ rel="stylesheet">
 <link rel="stylesheet" type="text/css" href="style.css">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
@@ -19,21 +21,37 @@ Everythingfor.me
 <section>
 <div class="navigation">
 <a class="active" href="index.html">Home</a>
-<a href="About.html">About</a>
+<!--<a href="About.html">About</a>
 <a href="tech.html">Tech</a>
-<a href="Contact.html">Contact</a>
+<a href="howto.html">How to</a>-->
 <a href="exam.html">Exam </a>
-<a href="howto.html">How to</a>
+<a href="jee.html">IIT-JEE</a>
+<a href="studymaterial.html">Study Material</a>
+<a href="Contact.html">Contact Us</a>
 </div>
-<div class="">
-<label>E-mail</label><input type="Email" name="Email" href="mailto@rahulsharmanhn2gmail.com"></a></input>
-
+<div class="form">
 <h2>Write us here:</h2>
 
-<textarea class="Comments" >
-type your text here.....
-</textarea><br>
-<input type="submit" value="Submit"> </div>
+<form name="contact" method="POST" data-netlify="true">
+  <p>
+    <label>Your Name: <input type="text" name="name" /></label>   
+  </p>
+  <p>
+    <label>Your Email: <input type="email" name="email" /></label>
+  </p>
+  <p>
+    <label>Your Role: <select name="role[]" multiple>
+      <option value="leader">Leader</option>
+      <option value="follower">Follower</option>
+    </select></label>
+  </p>
+  <p>
+    <label>Message: <textarea name="message"></textarea></label>
+  </p>
+  <p>
+    <button type="submit">Send</button>
+  </p>
+</form>
 </section>
 <footer>
 </footer>

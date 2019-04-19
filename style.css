@@ -10,24 +10,23 @@ html,body{margin:0px;
  
 /* header styling here*/
 header{
-	background:linear-gradient(to bottom,slategray,lavender,lightgreen);
+	background:linear-gradient(to top,LightSkyBlue,DodgerBlue,Blue);
 	 size:50x;
 	 margin:0px;
 	 padding:5px 0px 4px 0px;
 	 font-size:60px;
 	 color:white;
 	 text-decoration:none;
-text-shadow:3px 1px 1px black;
-font-family: 'EB Garamond', serif;
-margin-right:0px;
-animation-name:headerChange;	 
+      text-shadow:3px 1px 1px black;
+     font-family: 'EB Garamond', serif;
+      margin-right:0px;	  
 	 }
 	header>a{text-decoration:none;}
 @keyframes headerChange{
-	0%{background:linear-gradient(snow,yellow);}
-25%{background:linear-gradient(honeydew,yellow);}
-50%{background:linear-gradient(#FAF0E6,palegreen);}
-100%{background:linear-gradient(aliceblue,lemonchiffon);}}
+	0%{background:linear-gradient(to top,crimson,lightgreen,PaleVioletRed);}
+25%{background:linear-gradient(to top,honeydew,crimson,yellow);}
+50%{background:linear-gradient(to top,SandyBrown,Sienna,IndianRed);}
+100%{background:linear-gradient(aliceblue,lemonchiffon,RosyBrown);}} 
 
 
 
@@ -35,7 +34,7 @@ animation-name:headerChange;
 
 .navigation{
 	display:block;
-	background:linear-gradient(black,crimson,black);
+	background:linear-gradient();
     position: sticky;
     position:-webkit-sticky;
     top:0;
@@ -50,26 +49,21 @@ animation-name:headerChange;
 	display:inline-block;
 	color:honeydew;
 	font-size:20px;
-    background:linear-gradient(black,crimson,black);
+    background:linear-gradient(LightSeaGreen,DarkCyan,Teal);
 	text-decoration:none;
-    margin:2px;
-	border: 8px;}
+    margin:2px 5px 5px 4px;
+	border-radius: 8px;
+	}
 	  
-.navigation>a:hover,a:active{color:red;
-                 background:linear-gradient(navy,grey,yellow);
-                 padding:14px 12px ;
+.navigation>a:hover,a:active{color:navy;
+                 background:linear-gradient(#FFE4B5,Ivory,AntiqueWhite,BurlyWood);
+                 padding:14px 12px 12px 18px ;
                  transition:fade-out;
 				 transition:o.7s;
 				 border-radius:9px;
 				 border-color:black;}
-				 .active{background:linear-gradient(navy,red,lightgreen,yellow);}
+				 .active{background:linear-gradient();}
 				 
-  .Comments{background:linear-gradient(red,green,crimson);
-  position:sticky;
-  column:12;
-  row:11;
-  size:40%;
-  }
   
  .section{position:sticky;}
  .msg{background:linear-gradient(green,yellow);}
