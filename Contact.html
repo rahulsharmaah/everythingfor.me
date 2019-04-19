@@ -10,7 +10,8 @@
 </script>
 <link href="https://fonts.googleapis.com/css?family=Acme|Bree+Serif|Cinzel|Crimson+Text|EB+Garamond|Lora|Merriweather|Open+Sans+Condensed:300|Slabo+27px"
  rel="stylesheet">
-<link rel="stylesheet" type="text/css" href="style.css">
+ <link rel="stylesheet" type="text/css" href="style.css">
+<link rel="stylesheet" type="text/css" href="contact.css">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 <title>Everythingfor.me</title>
@@ -29,29 +30,20 @@ Everythingfor.me
 <a href="studymaterial.html">Study Material</a>
 <a href="Contact.html">Contact Us</a>
 </div>
+<h2 class="hd">Feel free to write us here:</h2>
 <div class="form">
-<h2>Write us here:</h2>
-
 <form name="contact" method="POST" data-netlify="true">
-  <p>
-    <label>Your Name: <input type="text" name="name" /></label>   
-  </p>
-  <p>
-    <label>Your Email: <input type="email" name="email" /></label>
-  </p>
-  <p>
-    <label>Your Role: <select name="role[]" multiple>
-      <option value="leader">Leader</option>
-      <option value="follower">Follower</option>
-    </select></label>
-  </p>
-  <p>
-    <label>Message: <textarea name="message"></textarea></label>
-  </p>
-  <p>
-    <button type="submit">Send</button>
-  </p>
+<fieldset class="contact">
+<legend>contact us</legend>
+<table>
+  <tr><td> <label>Your Name:</td><td><input class="act" type="text" name="name"  placeholder="Type your name" required maxlength="20" /></label></td></tr>    
+  <tr><td><label>Your Email:</td> <td><input type="email" name="email" placeholder="E-mail" required /></label></td></tr>
+    <tr><td><label>Your Message:</td><td> <textarea  class="txt" name="message" maxlength="210" placeholder="write your message here maximum 210 words"></textarea></label></td></tr> 
+    <tr><td><input type="Reset" value="Reset"name="Reset"></td><td><input type="submit" value="Submit"></input></td></tr>
+	</fieldset>
+	</table>
 </form>
+</div>
 </section>
 <footer>
 </footer>

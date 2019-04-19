@@ -1,0 +1,81 @@
+	 /* form */
+	 .form{position:fixed;
+	top: 50%;
+  left: 50%;
+  margin-top: -50px;
+  margin-left: -100px;
+  display:flex;
+  flex:1;
+  overflow:visible;
+  
+  border-radius:12px;}
+  
+  .hd{position:fixed;
+	top: 48%;
+  left: 48%;
+  margin-top: -52px;
+  margin-left: -88px;
+  color:DarkSlateBlue;
+  font-size:25px;
+  font-family: 'Lora', serif;}
+  
+  .contact{border-radius:8px;
+  }
+  
+  legend{font-size:25px;
+         font-family:'EB Garamond', serif;
+		 padding:15px 18px;
+		 text-decoration:bold;
+		 }
+		 
+	input{border-radius:8px;
+	      size:30px;
+		  padding:10px 10px;
+		  text-indent:4px;
+		  background:Azure;}
+		  
+   .txt{size:50px;
+   vertical-align:text-top;
+    border-radius:8px;
+	position:block;
+	height:80px 50px;
+	background:Azure;}
+	
+	label{font-size:20px;
+	color:Maroon;}
+	
+	input[type=submit]{width: 100%;
+         background-color: #4CAF50;
+         color: white;
+         padding: 14px 20px;
+         margin: 8px 0;
+         border: none;
+        border-radius: 4px;
+        cursor: pointer;
+       }
+	   
+	   input[type=Reset]{width: 100%;
+         background-color: DimGray;
+         color: white;
+         padding: 14px 20px;
+         margin: 8px 0;
+         border: none;
+        border-radius: 4px;
+        cursor: pointer;
+       }
+	   
+	   input[type=submit]:hover{
+  background-color: teal;
+  text-transform:uppercase;
+
+}
+ input[type=Reset]:hover{
+  background-color:LightCoral;
+  text-transform:uppercase;
+ }
+ 
+tabel{ padding:10px 10px;
+  border-style:collapse;
+     }
+
+        
