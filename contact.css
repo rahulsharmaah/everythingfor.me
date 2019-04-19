@@ -1,81 +1,114 @@
-	 /* form */
-	 .form{position:fixed;
-	top: 50%;
-  left: 50%;
-  margin-top: -50px;
-  margin-left: -100px;
-  display:flex;
-  flex:1;
-  overflow:visible;
-  
-  border-radius:12px;}
-  
-  .hd{position:fixed;
-	top: 48%;
-  left: 48%;
-  margin-top: -52px;
-  margin-left: -88px;
-  color:DarkSlateBlue;
-  font-size:25px;
-  font-family: 'Lora', serif;}
-  
-  .contact{border-radius:8px;
-  }
-  
-  legend{font-size:25px;
-         font-family:'EB Garamond', serif;
-		 padding:15px 18px;
-		 text-decoration:bold;
-		 }
-		 
-	input{border-radius:8px;
-	      size:30px;
-		  padding:10px 10px;
-		  text-indent:4px;
-		  background:Azure;}
-		  
-   .txt{size:50px;
-   vertical-align:text-top;
-    border-radius:8px;
-	position:block;
-	height:80px 50px;
-	background:Azure;}
-	
-	label{font-size:20px;
-	color:Maroon;}
-	
-	input[type=submit]{width: 100%;
-         background-color: #4CAF50;
-         color: white;
-         padding: 14px 20px;
-         margin: 8px 0;
-         border: none;
-        border-radius: 4px;
-        cursor: pointer;
-       }
-	   
-	   input[type=Reset]{width: 100%;
-         background-color: DimGray;
-         color: white;
-         padding: 14px 20px;
-         margin: 8px 0;
-         border: none;
-        border-radius: 4px;
-        cursor: pointer;
-       }
-	   
-	   input[type=submit]:hover{
-  background-color: teal;
-  text-transform:uppercase;
-
-}
- input[type=Reset]:hover{
-  background-color:LightCoral;
-  text-transform:uppercase;
- }
+html,body{margin:0px;
+ background:snow;
+ animation-name:headerChange;
+	 animation-duration:20s;
+	 animation:headerChange 20s infinite;
+	transition:opacity 500ms ease-in-out;
+	min-height:100%;
+	 justify-content:center;
+	 background-origin:header;
+	 margin: 0;
+		padding: 0;
+		border: 0;
+		font-size: 100%;
+		font: inherit;
+		vertical-align: baseline;}
  
-tabel{ padding:10px 10px;
-  border-style:collapse;
-     }
+/* header styling here*/
+header{
+	background:linear-gradient(to top,LightSkyBlue,DodgerBlue,Blue);
+	 size:50x;
+	 margin:0px;
+	 padding:5px 0px 4px 0px;
+	 font-size:60px;
+	 color:white;
+	 text-decoration:none;
+      text-shadow:3px 1px 1px black;
+     font-family: 'EB Garamond', serif;
+      margin-right:0px;	  
+	 }
+	header>a{text-decoration:none;}
+@keyframes headerChange{
+	0%{background:linear-gradient(to top,crimson,lightgreen,PaleVioletRed);}
+25%{background:linear-gradient(to top,honeydew,crimson,yellow);}
+50%{background:linear-gradient(to top,SandyBrown,Sienna,IndianRed);}
+100%{background:linear-gradient(aliceblue,lemonchiffon,RosyBrown);}} 
 
-        
+
+
+
+
+.navigation{
+	display:block;
+	background:linear-gradient();
+    position: sticky;
+    position:-webkit-sticky;
+    top:0;
+	border-radius: 8px;
+	border:3px;
+	overflow: visible;}
+  
+.navigation>a:link,a:visited{
+	color:navy;
+	padding:8px 10px;
+	color:white;
+	display:inline-block;
+	color:honeydew;
+	font-size:20px;
+    background:linear-gradient(LightSeaGreen,DarkCyan,Teal);
+	text-decoration:none;
+    margin:2px 5px 5px 4px;
+	border-radius: 8px;
+	}
+	  
+.navigation>a:hover,a:active{color:navy;
+                 background:linear-gradient(#FFE4B5,Ivory,AntiqueWhite,BurlyWood);
+                 padding:14px 12px 12px 18px ;
+                 transition:fade-out;
+				 transition:o.7s;
+				 border-radius:9px;
+				 border-color:black;}
+				 .active{background:linear-gradient();}
+				 
+  
+ .section{position:sticky;}
+ .msg{background:linear-gradient(green,yellow);}
+ 
+ .msg,#start{
+   padding:14px 12px;
+   margin:10px 0px 10px 10px;
+ animation-name:msgBg;
+	 animation-duration:20s;
+	 animation:msgBg 20s infinite;
+	 font-family:font-family: 'Lora', serif;
+	 font-size:20px;
+	 overflow: visible;}
+	 
+	 #start{background:linear-gradient(yellow,red);
+	 text-align:left;
+	  text-indent: 50px;
+  text-align: justify;
+  letter-spacing: 1px;
+  overflow: visible;}
+	#start::first-line {
+  color: #008CBA;
+	font-size: xx-large;}
+ 
+ @keyframes msgBg{
+	 0%{background:linear-gradient(#E0FFFF,salmon,#F5F5DC,#FFF0F5);}
+ 100%{background:linear-gradient(tomato,#FFFFF0);}}
+ 
+ @media only screen and (max-width:650px){
+	 .navigation>a:link,a:visited{display:block;}
+	 header{font-size:32px;}
+	 
+	 
+	 
+
+	 
+ 
+  
+	
+
+
+
