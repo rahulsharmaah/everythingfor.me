@@ -1,0 +1,25 @@
+.polaroid{
+  background:azure;
+  box-shadow: 8px 14px 8px 9px rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  display:flex;
+  flex:1;
+  order:1;
+  flex-direction:row;
+  float:left;
+  overflow:visible;
+  position:inline-flex;
+  margin:15px 15px 15px 15px;
+  justify-content:space-around;
+}
+.main{ background:honeydew;
+  box-shadow: 8px 14px 8px 9px rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  display:flex;
+  flex:1;
+  order:2;
+  flex-direction:row;
+  float:left;
+  overflow:visible;
+  position:inline-flex;
+  margin:15px 15px 15px 15px;
+  justify-content:space-around;}
+  
