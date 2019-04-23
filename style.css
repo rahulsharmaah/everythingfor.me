@@ -98,7 +98,7 @@ header{
 	 0%{background:linear-gradient(#E0FFFF,salmon,#F5F5DC,#FFF0F5);}
  100%{background:linear-gradient(tomato,#FFFFF0);}}
  
- @media only screen and (max-width:650px){
+ @media only screen and (max-width:250px){
 	 .navigation>a:link,a:visited{display:block;}
 	 header{font-size:32px;}
 	 
