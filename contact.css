@@ -18,22 +18,7 @@
   color:DarkSlateBlue;
   font-size:25px;
   font-family: 'Lora', serif;}
-  
-  @media only screen  and (max-width:650px){
-  .form{display:flex;
-  position:absolute;
-  top: 58%;
-  left: 58%;
-  margin-top: -40px;
-  margin-left: -220px;}}
-  
- @media only screen  and (max-width:650px){
-  .hd{display:flex;
-  position:absolute;
-  top: 52%;
-  left: 58%;
-  margin-top: -40px;
-  margin-left: -220px;}} 
+   
   
   .contact{border-radius:8px;
   }
