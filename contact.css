@@ -1,4 +1,6 @@
-	 /* form */
+   /* form */
+   
+   @import url('https://fonts.googleapis.com/css?family=Roboto+Slab');
 	 .form{position:fixed;
 	top: 50%;
   left: 50%;
@@ -7,20 +9,39 @@
   display:flex;
   flex:1;
   overflow:visible;
-  
   border-radius:12px;}
   
-  .hd{position:fixed;
-	top: 48%;
+  .h2hd{position:absolute;
+	top: 44%;
   left: 48%;
-  margin-top: -52px;
+  margin-top: -42px;
   margin-left: -88px;
   color:DarkSlateBlue;
   font-size:25px;
-  font-family: 'Lora', serif;}
-   
+  font-family: 'Roboto Slab', serif;
+  font-weight: 800;
+  background:linear-gradient(to top, red, blue,black,orange, orange 60%, cyan);
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+text-decoration:bold;}
   
-  .contact{border-radius:8px;
+  @media only screen  and (max-width:650px){
+  .form{display:grid;
+  position:absolute;
+  top: 78%;
+  left: 58%;
+  margin-top: -40px;
+  margin-left: -220px;}
+  
+  .h2hd{display:block;
+  position:absolute;
+  top: 72%;
+  left: 58%;
+  margin-top: -40px;
+  margin-left: -220px;}} 
+  
+  .contact{border-radius:18px;
+  box-shadow:0px 5px 8px 6px azure ;
   }
   
   legend{font-size:25px;
@@ -77,6 +98,6 @@
  
 tabel{ padding:10px 10px;
   border-style:collapse;
-     }
+     }}
 
         

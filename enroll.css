@@ -1,0 +1,4 @@
+.gridview{display:inline-grid;
+          grid-template-columns:90px auto 90px 80px;
+          grid-template-rows:;
+		  }		  

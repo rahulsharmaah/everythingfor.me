@@ -12,7 +12,8 @@ html,body{margin:0px;
 		border: 0;
 		font-size: 100%;
 		font: inherit;
-		vertical-align: baseline;}
+		vertical-align: baseline;
+   }
  
 /* header styling here*/
 header{
@@ -25,16 +26,25 @@ header{
 	 text-decoration:none;
       text-shadow:3px 1px 1px black;
      font-family: 'EB Garamond', serif;
-      margin-right:0px;	  
+			margin-right:0px;
+			width:100%;	  
 	 }
 	header>a{text-decoration:none;}
-@keyframes headerChange{
+  @keyframes headerChange{
 	0%{background:linear-gradient(to top,crimson,lightgreen,PaleVioletRed);}
 25%{background:linear-gradient(to top,honeydew,crimson,yellow);}
 50%{background:linear-gradient(to top,SandyBrown,Sienna,IndianRed);}
 100%{background:linear-gradient(aliceblue,lemonchiffon,RosyBrown);}} 
+*/
 
-
+.menu{display:hidden;
+	background:linear-gradient();
+    position: sticky;
+    position:-webkit-sticky;
+    top:0;
+	border-radius: 8px;
+	border:3px;
+	overflow: visible;}
 
 
 
@@ -70,7 +80,10 @@ header{
 				 border-color:black;}
 				 .active{background:linear-gradient();}
 				 
-  
+	
+				 a:before{background:linear-gradient(Red,green,pink);
+									padding:10px 2px;
+								  }
  .section{position:sticky;}
  .msg{background:linear-gradient(green,yellow);}
  
@@ -98,17 +111,30 @@ header{
 	 0%{background:linear-gradient(#E0FFFF,salmon,#F5F5DC,#FFF0F5);}
  100%{background:linear-gradient(tomato,#FFFFF0);}}
  
- @media only screen and (max-width:250px){
-	 .navigation>a:link,a:visited{display:block;}
-	 header{font-size:32px;}
-	 
-	 
+ @media only screen and (max-width:650px){
+	 .navigation{display:block;
+	          }
+	 .navigation>a:link,a:visited{display:block;
+	text-align: center;}
+	 header{font-size:32px;}}
+
+.box>.dreamiitneet{height:70%;
+							width:100%;
+							transform:translate(0%,0%);
+						position: absolute;
+						border-radius: 30px;
+					frameborder:1;
+					marginheight:3px;}
+							
+.box{
+	border-radius: 30px;
+margin:10px 0px 0px 0px;}
+
 	 
 
 	 
  
   
 	
-
 
 
