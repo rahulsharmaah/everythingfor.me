@@ -1,0 +1,154 @@
+@import url('https://fonts.googleapis.com/css?family=Yeon+Sung&display=swap');
+
+
+body {
+	margin: 0;
+	width: 100%;
+	font-family: "Exo", sans-serif;
+	color: #fff;
+    background: linear-gradient(-45deg, #23a6d5, #23d5ab , rgb(182, 244, 146), rgba(0,40,60,1) ,rgba(0,143,213,1), rgba(221,49,49,1));
+	background-size: 400% 400%;
+	-webkit-animation: gradientBG 10s ease infinite;
+	        animation: gradientBG 10s ease infinite;
+}
+h1 {
+    font-weight: 900;
+    background-image: linear-gradient( 111.9deg, C, rgba(0,8,119,1) 100.7% );
+}
+a {
+	text-decoration: none;
+	color: #212121;
+}
+@-webkit-keyframes gradientBG {
+	0% {
+		background-position: 0% 25%;
+    }
+    25% {
+		background-position: 25% 50%;
+	}
+	50% {
+		background-position: 50% 75%;
+    }
+    75% {
+		background-position: 75% 85%;
+	}
+	100% {
+		background-position: 85% 100%;
+	}
+}
+@keyframes gradientBG {
+	0% {
+		background-position: 0% 25%;
+    }
+    25% {
+		background-position: 25% 50%;
+	}
+	50% {
+		background-position: 50% 75%;
+    }
+    75% {
+		background-position: 75% 85%;
+	}
+	100% {
+		background-position: 85% 100%;
+	}
+}
+
+.effect5 {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+  }
+  .effect5:before, .effect5:after
+  {
+    z-index: -1;
+    position: absolute;
+    content: "";
+    bottom: 25px;
+    left: 10px;
+    width: 50%;
+    top: 80%;
+    max-width:300px;
+    background: #777;
+    -webkit-box-shadow: 0 35px 20px #777;
+    -moz-box-shadow: 0 35px 20px #777;
+    box-shadow: 0 35px 20px #777;
+    -webkit-transform: rotate(-8deg);
+    -moz-transform: rotate(-8deg);
+    -o-transform: rotate(-8deg);
+    -ms-transform: rotate(-8deg);
+    transform: rotate(-8deg);
+  }
+  .effect5:after {
+    -webkit-transform: rotate(8deg);
+    -moz-transform: rotate(8deg);
+    -o-transform: rotate(8deg);
+    -ms-transform: rotate(8deg);
+    transform: rotate(8deg);
+    right: 10px;
+    left: auto;
+  }
+  
+form input {
+    background-color: #08AEEA;
+    background-image: linear-gradient(0deg, #08AEEA 0%, #2AF598 100%);
+     background: linear-gradient(147deg, #FFE53B 0%, #FF2525 74%);
+    margin:15px 0;
+	padding:15px 10px;
+    width:50%;
+    font-size: 20px;
+	border-radius:20px;
+    display:inline-block;
+    font-family: 'Yeon Sung', cursive;
+	-webkit-box-sizing:border-box;
+	   -moz-box-sizing:border-box;
+	        box-sizing:border-box;
+    -webkit-transition:0.2s ease all;
+	   -moz-transition:0.2s ease all;
+	    -ms-transition:0.2s ease all;
+	     -o-transition:0.2s ease all;
+	        transition:0.2s ease all;
+}
+form input[type=text]:focus{
+    border-color: 3px solid cornflowerblue;
+     background: linear-gradient(147deg, #FFE53B 0%, #FF2525 74%);
+     transform:scale(1.2);
+    }
+
+.buttons {
+    background-color: #08AEEA;
+    background-image: linear-gradient(0deg, #08AEEA 0%, #2AF598 100%);
+     background: linear-gradient(147deg, #FFE53B 0%, #FF2525 74%);
+    margin:15px 0;
+	padding:15px 10px;
+    width:50%;}
+    .top{
+        align-content: center;
+        position: relative;
+        display: inline;
+        width: auto;
+        font-size:50px;
+        margin-top:30px;
+    }
+    #share{
+        font-size: 30px;
+    }
+    #h3{
+        font-size: 30px;
+        background-image: radial-gradient( circle farthest-corner at -8.9% 51.2%,  rgba(255,124,0,1) 0%, rgba(255,124,0,1) 15.9%, rgba(255,163,77,1) 15.9%, rgba(255,163,77,1) 24.4%, rgba(19,30,37,1) 24.5%, rgba(19,30,37,1));
+          -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+    }
+    .head{
+        font-size: 20px;
+        background-image: linear-gradient( 135deg, #FFA8A8 10%, #FCFF00 100%);  
+                     -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+    b{
+        font-size:20px;
+        background-image: linear-gradient( 109.6deg,  rgba(245,239,249,1) 30.1%, rgba(207,211,236,1) 100.2% );
+        -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+    }
