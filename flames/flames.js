@@ -75,42 +75,43 @@ function calc()
                             //alert(ar);
                     }
 
+                    
                     if(ar=="F")
                     {
                             //res="FRIENDS";
-							document.getElementById("msg").innerHTML = 'Your relationship is :FRIENDS';
+							document.getElementById("msg").innerHTML = '<h1>Your relationship is :FRIENDS</h1>';
 							document.getElementById("msg").style.color='black';                  
                     }
                     else if(ar=="L")
                     {
                             //res="LOVER";
-							document.getElementById("msg").innerHTML = ' Your relationship is :LOVER';
+							document.getElementById("msg").innerHTML = '<h1> Your relationship is :LOVER</h1>';
 							document.getElementById("msg").style.color='maroon';
                     }
                     else if(ar=="A")
                     {
                             //res="AFFECTION";
-							document.getElementById("msg").innerHTML = 'Your relationship is : AFFECTION';
+							document.getElementById("msg").innerHTML = '<h1>Your relationship is : AFFECTION</h1>';
 							document.getElementById("msg").style.color='orange';
                     } 
                     else if(ar=="M")
                     {
                             //res="MARRIAGE";
-							document.getElementById("msg").innerHTML = 'Your relationship is :MARRIAGE';
+							document.getElementById("msg").innerHTML = '<h1>Your relationship is :MARRIAGE</h1>';
 							document.getElementById("msg").style.color='purple';
                     }
                     else if(ar=="E")
                     {	
                             //res="ENEMY";
-							document.getElementById("msg").innerHTML = 'Your relationship is :ENEMY';
+							document.getElementById("msg").innerHTML = '<h1>Your relationship is :ENEMY</h1>';
 							document.getElementById("msg").style.color='gold';
                     }
                     else if(ar=="S")
                     {
                             //res="SISTER";
-							document.getElementById("msg").innerHTML = 'SISTER';
+							document.getElementById("msg").innerHTML = '<h1>Your relationship is:SISTER</h1>';
 							document.getElementById("msg").style.color='violet';
-                    }
+		    }
                     document.getElementById("nam"+1).style.display = 'block';
                     document.getElementById("nam"+1).textContent="Hye" + " "+nam + " &" +names;
             }
